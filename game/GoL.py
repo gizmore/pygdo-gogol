@@ -1,0 +1,2 @@
+class GoL:
+    pass
