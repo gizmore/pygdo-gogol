@@ -16,8 +16,8 @@ class GDT_BoardSize(GDT_Enum):
         v = Strings.substr_from(v, ': ')
         return tuple(v.split('x', 1))
 
-    def get_width(self):
-        return self.get_size()[0]
+    def get_width(self) -> int:
+        return int(self.get_size()[0])
 
-    def get_height(self):
-        return self.get_size()[1]
+    def get_height(self) -> int:
+        return int(self.get_size()[1])
