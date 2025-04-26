@@ -9,6 +9,14 @@ from gdo.payment_credits.GDT_Credits import GDT_Credits
 
 class init(MethodGoGoL):
 
+    @classmethod
+    def gdo_trigger(cls) -> str:
+        return 'gogol.init'
+
+    @classmethod
+    def gdo_trig(cls) -> str:
+        return 'ggi'
+
     def gdo_create_form(self, form: GDT_Form) -> None:
         form.add_field(GDT_UInt('num_players').min(2).max(6).not_null().initial('2'))
         form.add_field(GDT_BoardSize('size').not_null().initial('small'))

@@ -1,6 +1,5 @@
 from gdo.base.GDO import GDO
 from gdo.base.GDT import GDT
-from gdo.base.WithSerialization import WithSerialization
 from gdo.core.GDO_User import GDO_User
 from gdo.core.GDT_AutoInc import GDT_AutoInc
 from gdo.core.GDT_Creator import GDT_Creator
@@ -12,7 +11,7 @@ from gdo.date.GDT_Created import GDT_Created
 from gdo.date.GDT_Timestamp import GDT_Timestamp
 
 
-class GDO_Board(WithSerialization, GDO):
+class GDO_Board(GDO):
     """
     %7
     """

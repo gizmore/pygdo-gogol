@@ -7,11 +7,13 @@ from gdo.gogol.MethodGoGoL import MethodGoGoL
 
 class join(MethodGoGoL):
 
+    @classmethod
     def gdo_trigger(cls) -> str:
         return 'gogol.join'
 
+    @classmethod
     def gdo_trig(cls) -> str:
-        return 'gj'
+        return 'ggj'
 
     def gdo_create_form(self, form: GDT_Form) -> None:
         form.add_field(
