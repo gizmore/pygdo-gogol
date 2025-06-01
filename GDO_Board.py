@@ -4,7 +4,7 @@ from gdo.core.GDO_User import GDO_User
 from gdo.core.GDT_AutoInc import GDT_AutoInc
 from gdo.core.GDT_Creator import GDT_Creator
 from gdo.core.GDT_Enum import GDT_Enum
-from gdo.core.GDT_Serialize import GDT_Serialize, Mode
+from gdo.core.GDT_Serialize import GDT_Serialize, SerializeMode as Mode
 from gdo.core.GDT_UInt import GDT_UInt
 from gdo.core.GDT_User import GDT_User
 from gdo.date.GDT_Created import GDT_Created
