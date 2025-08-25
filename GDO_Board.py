@@ -47,7 +47,7 @@ class GDO_Board(GDO):
         return self.get_player(self.get_turn())
 
     def next_turn(self):
-        self.increment('b_turn').save()
+        self.increment('b_turn')
         if self.get_current_player() == self.get_player(5):
             self.gol_turn()
 
