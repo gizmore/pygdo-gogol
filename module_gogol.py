@@ -57,7 +57,7 @@ class module_gogol(GDO_Module):
             GDT_UInt('gogol_won').not_null().initial('0'),
         ]
 
-    def gdo_install(self):
+    async def gdo_install(self):
         GOGOL_Install.install()
 
     def gdo_load_scripts(self, page: 'GDT_Page'):
