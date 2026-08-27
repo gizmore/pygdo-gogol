@@ -58,7 +58,7 @@ class module_gogol(GDO_Module):
         ]
 
     async def gdo_install(self):
-        GOGOL_Install.install()
+        await GOGOL_Install.install()
 
     def gdo_load_scripts(self, page: 'GDT_Page'):
         pass
